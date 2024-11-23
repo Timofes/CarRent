@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:orientation="vertical"
+    android:layout_marginBottom="20dp"
+    android:background="@drawable/radiusshape"
+    android:id="@+id/MainItem"
+    >
+
+    <TextView
+        android:id="@+id/item_time5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/radiusshape2"
+        android:paddingStart="2dp"
+        android:paddingTop="1dp"
+        android:paddingEnd="2dp"
+        android:paddingBottom="1dp"
+        android:text="1"
+        android:textColor="#ffffff"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/item_time4"
+        app:layout_constraintTop_toBottomOf="@+id/item_name" />
+
+    <TextView
+        android:id="@+id/item_time2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/radiusshape2"
+        android:paddingStart="2dp"
+        android:paddingTop="1dp"
+        android:paddingEnd="2dp"
+        android:paddingBottom="1dp"
+        android:text="1"
+        android:textColor="#ffffff"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/item_time1"
+        app:layout_constraintTop_toBottomOf="@+id/item_name" />
+
+    <TextView
+        android:id="@+id/item_time6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/radiusshape2"
+        android:paddingStart="2dp"
+        android:paddingTop="1dp"
+        android:paddingEnd="2dp"
+        android:paddingBottom="1dp"
+        android:text="1"
+        android:textColor="#ffffff"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/item_time5"
+        app:layout_constraintTop_toBottomOf="@+id/item_name" />
+
+    <TextView
+        android:id="@+id/item_time7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/radiusshape2"
+        android:paddingStart="2dp"
+        android:paddingTop="1dp"
+        android:paddingEnd="2dp"
+        android:paddingBottom="1dp"
+        android:text="1"
+        android:textColor="#ffffff"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/item_time6"
+        app:layout_constraintTop_toBottomOf="@+id/item_name" />
+
+    <TextView
+        android:id="@+id/item_Price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="25dp"
+        android:paddingTop="25dp"
+        android:text="TextView"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.134"
+        app:layout_constraintStart_toEndOf="@+id/item_image"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/item_image"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/radiusshape1"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        android:textColor="#ffffff"
+        app:layout_constraintStart_toEndOf="@+id/item_image"
+        app:layout_constraintTop_toBottomOf="@+id/item_Price" />
+
+    <TextView
+        android:id="@+id/item_time1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/radiusshape2"
+        android:padding="1dp"
+        android:text="1"
+        android:textColor="#ffffff"
+        app:layout_constraintStart_toEndOf="@+id/item_image"
+        app:layout_constraintTop_toBottomOf="@+id/item_name"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/item_time3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/radiusshape2"
+        android:paddingStart="2dp"
+        android:paddingTop="1dp"
+        android:paddingEnd="2dp"
+        android:paddingBottom="1dp"
+        android:text="1"
+        android:textColor="#ffffff"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/item_time2"
+        app:layout_constraintTop_toBottomOf="@+id/item_name" />
+
+    <TextView
+        android:id="@+id/item_time4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/radiusshape2"
+        android:paddingStart="2dp"
+        android:paddingTop="1dp"
+        android:paddingEnd="2dp"
+        android:paddingBottom="1dp"
+        android:text="1"
+        android:textColor="#ffffff"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/item_time3"
+        app:layout_constraintTop_toBottomOf="@+id/item_name" />
+
+    <TextView
+        android:id="@+id/item_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        android:textColor="#ffffff"
+        app:layout_constraintStart_toEndOf="@+id/item_image"
+        app:layout_constraintTop_toBottomOf="@+id/item_time1" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="0.5"
+        android:scaleY="0.5"
+        app:layout_constraintBottom_toBottomOf="@+id/item_rate"
+        app:layout_constraintStart_toEndOf="@+id/item_rate"
+        app:layout_constraintTop_toTopOf="@+id/item_rate"
+        app:srcCompat="@drawable/star" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

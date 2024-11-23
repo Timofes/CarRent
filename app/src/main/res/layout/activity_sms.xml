@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Login_Data_Registr"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menu.sms.SmsActivity"
+    android:background="#D9D9D9"
+    >
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/object_list_time"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@id/imageButton2_sms"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:background="@drawable/activemenupress"
+        android:id="@+id/imageButton2_sms"
+        android:layout_width="wrap_content"
+        android:padding="7dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:src="@drawable/message_processing"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline25"
+        app:layout_constraintRight_toRightOf="@+id/guideline50"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:transitionName="sms"/>
+
+    <ImageButton
+        android:background="@drawable/waitmenupress"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/imageButton1_sms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/view_grid_outline"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/guideline25"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:transitionName="grid"/>
+
+    <ImageButton
+        android:background="@drawable/waitmenupress"
+        android:id="@+id/imageButton3_sms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline50"
+        app:layout_constraintRight_toRightOf="@+id/guideline75"
+        app:srcCompat="@drawable/baseline_calendar_today_24"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:transitionName="time"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline75"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#D9D9D9"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <ImageButton
+        android:background="@drawable/waitmenupress"
+        android:id="@+id/imageButton4_sms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline75"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/account1"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:transitionName="profile"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

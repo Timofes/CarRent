@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Login_Data_Registr"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D9D9D9"
+    tools:context=".login.RegistrActivity">
+
+    <EditText
+        android:id="@+id/password_Data_Registr"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:imeOptions="actionDone"
+        android:singleLine="true"
+        android:inputType="textPassword"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="20dp"
+        android:autofillHints="password"
+        android:background="@drawable/registrshapez"
+        android:hint="Пароль"
+        android:paddingLeft="10dp"
+        android:text=""
+        android:textColor="#564F4F"
+        android:textColorHint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/login_Data_Registr" />
+
+    <Button
+        android:id="@+id/Input_button_Registr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#564F4F"
+        android:text="Зарегистрироваться"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sur_name_Data_Registr" />
+
+    <TextView
+        android:id="@+id/BackWindow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Уже есть аккаунт"
+        android:textColor="@color/black"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="@+id/sur_name_Data_Registr"
+        app:layout_constraintTop_toBottomOf="@+id/sur_name_Data_Registr" />
+
+    <EditText
+        android:id="@+id/Email_Data_Registr"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="20dp"
+        android:autofillHints="emailAddress"
+        android:background="@drawable/registrshapez"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:imeOptions="actionDone"
+        android:singleLine="true"
+        android:paddingLeft="10dp"
+        android:text=""
+        android:textColor="#564F4F"
+        android:textColorHint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password_Data_Registr" />
+
+    <EditText
+        android:id="@+id/first_name_Data_Registr"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="20dp"
+        android:autofillHints="name"
+        android:background="@drawable/registrshapez"
+        android:hint="Имя"
+        android:imeOptions="actionDone"
+        android:singleLine="true"
+        android:paddingLeft="10dp"
+        android:text=""
+        android:textColor="#564F4F"
+        android:textColorHint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Email_Data_Registr" />
+
+    <EditText
+        android:id="@+id/last_name_Data_Registr"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="20dp"
+        android:autofillHints="name"
+        android:background="@drawable/registrshapez"
+        android:hint="Фамилия"
+        android:paddingLeft="10dp"
+        android:imeOptions="actionDone"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="#564F4F"
+        android:textColorHint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/first_name_Data_Registr" />
+
+    <EditText
+        android:id="@+id/sur_name_Data_Registr"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="20dp"
+        android:autofillHints="name"
+        android:background="@drawable/registrshapez"
+        android:hint="Отчество"
+        android:paddingLeft="10dp"
+        android:text=""
+        android:imeOptions="actionDone"
+        android:singleLine="true"
+        android:textColor="#564F4F"
+        android:textColorHint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/last_name_Data_Registr" />
+
+    <EditText
+        android:id="@+id/login_Data_Registr"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:imeOptions="actionDone"
+        android:singleLine="true"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="40dp"
+        android:autofillHints="username"
+        android:background="@drawable/registrshapez"
+        android:hint="Логин"
+        android:paddingLeft="10dp"
+        android:text=""
+        android:textColor="#564F4F"
+        android:textColorHint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/point"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+
+        android:background="@drawable/radiusshape2"
+        android:padding="10dp"
+        android:text=""
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/password_Data_Registr"
+        app:layout_constraintBottom_toBottomOf="@+id/password_Data_Registr"
+        app:layout_constraintTop_toTopOf="@+id/password_Data_Registr"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Login_Data_Registr"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    android:orientation="vertical"
+    tools:context=".menu.grid.ItemInfoActivity">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/timeshapez"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+    </FrameLayout>
+    <Button
+        android:id="@+id/bron"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/description_info"
+        app:layout_constraintBottom_toBottomOf="@id/frameLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="@color/light_gray"
+        android:textColor="@color/black"
+        android:text="Забронировать" />
+    <TextView
+        android:id="@+id/item_Price_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:text="TextView"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/item_image_info"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <ImageView
+        android:id="@+id/item_image_info"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/radiusshape1"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="@+id/imageButton"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/item_name_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:text="TextView"
+        android:textColor="#ffffff"
+        android:lines="2"
+        android:textSize="28dp"
+        app:layout_constraintStart_toEndOf="@+id/item_image_info"
+        app:layout_constraintTop_toTopOf="@+id/item_image_info" />
+
+    <TextView
+        android:id="@+id/item_time4_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/radiusshape2"
+        android:paddingStart="2dp"
+        android:paddingTop="1dp"
+        android:paddingEnd="2dp"
+        android:paddingBottom="1dp"
+        android:text="1"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/item_time3_info"
+        app:layout_constraintTop_toBottomOf="@+id/item_image_info" />
+
+    <TextView
+        android:id="@+id/item_time6_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/radiusshape2"
+        android:paddingStart="2dp"
+        android:paddingTop="1dp"
+        android:paddingEnd="2dp"
+        android:paddingBottom="1dp"
+        android:text="1"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/item_time5_info"
+        app:layout_constraintTop_toBottomOf="@+id/item_image_info" />
+
+    <TextView
+        android:id="@+id/item_time5_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/radiusshape2"
+        android:paddingStart="2dp"
+        android:paddingTop="1dp"
+        android:paddingEnd="2dp"
+        android:paddingBottom="1dp"
+        android:text="1"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/item_time4_info"
+        app:layout_constraintTop_toBottomOf="@+id/item_image_info" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/waitmenupress"
+        android:src="@drawable/message_processing"
+        android:transitionName="sms"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline25"
+        app:layout_constraintRight_toRightOf="@+id/guideline50"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/activemenupress"
+        android:padding="7dp"
+        android:src="@drawable/view_grid_outline"
+        android:transitionName="grid"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/guideline25"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline75"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/waitmenupress"
+        android:transitionName="time"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline50"
+        app:layout_constraintRight_toRightOf="@+id/guideline75"
+        app:srcCompat="@drawable/baseline_calendar_today_24"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/waitmenupress"
+        android:transitionName="profile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline75"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/account1"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/item_time1_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/radiusshape2"
+        android:padding="1dp"
+        android:text="1"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/item_image_info"
+        app:layout_constraintTop_toBottomOf="@+id/item_image_info" />
+
+    <TextView
+        android:id="@+id/item_time3_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/radiusshape2"
+        android:paddingStart="2dp"
+        android:paddingTop="1dp"
+        android:paddingEnd="2dp"
+        android:paddingBottom="1dp"
+        android:text="1"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/item_time2_info"
+        app:layout_constraintTop_toBottomOf="@+id/item_image_info" />
+
+    <TextView
+        android:id="@+id/item_time2_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/radiusshape2"
+        android:paddingStart="2dp"
+        android:paddingTop="1dp"
+        android:paddingEnd="2dp"
+        android:paddingBottom="1dp"
+        android:text="1"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/item_time1_info"
+        app:layout_constraintTop_toBottomOf="@+id/item_image_info" />
+
+    <TextView
+        android:id="@+id/item_time7_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/radiusshape2"
+        android:paddingStart="2dp"
+        android:paddingTop="1dp"
+        android:paddingEnd="2dp"
+        android:paddingBottom="1dp"
+        android:text="1"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/item_time6_info"
+        app:layout_constraintTop_toBottomOf="@+id/item_image_info" />
+
+    <TextView
+        android:id="@+id/item_rate_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:text="TextView"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/item_image_info"
+        app:layout_constraintTop_toBottomOf="@+id/item_Price_info" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Цена за час:"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/item_image_info"
+        app:layout_constraintTop_toBottomOf="@+id/item_name_info" />
+
+    <TextView
+        android:id="@+id/Time_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/item_time1_info"
+        app:layout_constraintTop_toBottomOf="@+id/item_time2_info" />
+
+    <TextView
+        android:id="@+id/body_time_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/Time_number"
+        app:layout_constraintTop_toBottomOf="@+id/Time_number" />
+
+    <TextView
+        android:id="@+id/year_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/body_time_info"
+        app:layout_constraintTop_toBottomOf="@+id/body_time_info" />
+
+    <TextView
+        android:id="@+id/addres_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/year_info"
+        app:layout_constraintTop_toBottomOf="@+id/year_info" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/radiusshape"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout"
+        app:srcCompat="@drawable/account_circle" />
+
+    <TextView
+        android:id="@+id/login_user_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="TextView"
+        android:textSize="24dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton"
+        app:layout_constraintStart_toEndOf="@+id/imageButton"
+        app:layout_constraintTop_toTopOf="@+id/imageButton" />
+
+    <TextView
+        android:id="@+id/description_info"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:lines="3"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout"
+        app:layout_constraintStart_toStartOf="@+id/addres_info"
+        app:layout_constraintTop_toBottomOf="@+id/addres_info" />
+
+    <TextView
+        android:id="@+id/UserWhoAd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/login_user_info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

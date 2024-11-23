@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/grid_to_profile"
+    app:startDestination="@layout/activity_main_window">
+
+        <activity
+            android:id="@+id/mainWindowActivity"
+            android:name="com.example.carrent.menu.grid.MainWindowActivity"
+            android:label="activity_main_window"
+            tools:layout="@layout/activity_main_window" >
+
+            <action
+                app:enterAnim="@anim/blink_anim"
+                app:exitAnim="@anim/blink_anim"
+                app:popExitAnim="@anim/blink_anim"
+                app:popEnterAnim="@anim/blink_anim"
+                android:id="@+id/action_global_navigation3"
+                app:destination="@id/profileActivity" />
+        </activity>
+        <activity
+            android:id="@+id/profileActivity"
+            android:name="com.example.carrent.menu.profile.ProfileActivity"
+            android:label="activity_profile"
+            tools:layout="@layout/activity_profile" />
+</navigation>

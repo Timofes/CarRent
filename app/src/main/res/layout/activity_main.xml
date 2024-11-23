@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Login_Data_Registr"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login.MainActivity"
+    android:background="#A9A3A3"
+    >
+
+    <Button
+        android:id="@+id/Input_button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#564F4F"
+        android:text="Войти"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Password_Data" />
+
+    <EditText
+        android:id="@+id/Login_Data"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:imeOptions="actionDone"
+        android:singleLine="true"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="200dp"
+        android:autofillHints="username"
+        android:background="@drawable/registrshapez"
+        android:hint="Логин"
+        android:paddingLeft="10dp"
+        android:text=""
+        android:textColor="#564F4F"
+        android:textColorHint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Password_Data"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:imeOptions="actionDone"
+        android:singleLine="true"
+        android:inputType="textPassword"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="20dp"
+        android:autofillHints="password"
+        android:background="@drawable/registrshapez"
+        android:hint="Пароль"
+        android:paddingLeft="10dp"
+        android:text=""
+        android:textColor="#564F4F"
+        android:textColorHint="@null"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Login_Data" />
+
+    <TextView
+        android:id="@+id/NextWindows"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Зарегистрироваться"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/Input_button"
+        app:layout_constraintStart_toStartOf="@+id/Password_Data"
+        app:layout_constraintTop_toBottomOf="@+id/Password_Data"
+        app:layout_constraintVertical_bias="0.489" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
